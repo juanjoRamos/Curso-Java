@@ -14,7 +14,7 @@ public class Cajero {
 
 	/**
 	 * @param args
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 
 	public static void main(String[] args) throws InterruptedException {
@@ -62,6 +62,8 @@ public class Cajero {
 			} catch (InputMismatchException e) {
 				System.out.println("El valor introducido no es correcto.");
 				Thread.sleep(2 * 1000);
+				/* Cuando el usuario introduzca un valor no entero mandara el mensaje y el
+				 escaner no lo "tomara en cuenta" comenzará de nuevo.*/
 				sc.nextLine();
 			}
 		} while (numeroIntroducido != 0);
