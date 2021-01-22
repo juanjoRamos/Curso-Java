@@ -2,6 +2,7 @@
  * 
  */
 package org.cajero;
+
 /**
  * @author juanjoRamos
  *
@@ -11,57 +12,60 @@ public class Cuenta {
 	private String nombreTitular = null;
 	private int numeroSecreto = Integer.MIN_VALUE;
 	private float salario;
-	
+
 	/**
 	 * Cuenta
+	 * 
 	 * @param nombre
-	 * @param salario
-	 * {@summary Constructor que nos ayuda a crear una cuenta }
+	 * @param salario {@summary Constructor que nos ayuda a crear una cuenta }
 	 */
 	public Cuenta(String nombre, Float salario) {
 		this.nombreTitular = nombre;
 		this.numeroSecreto = crearNumeroSecreto();
 		this.salario = salario;
 	}
+
 	/**
 	 * Cuenta
-	 * @param nombre
-	 * {@summary Constructor que nos ayuda a crear una cuenta }
+	 * 
+	 * @param nombre {@summary Constructor que nos ayuda a crear una cuenta }
 	 */
 	public Cuenta(String nombre) {
 		this.nombreTitular = nombre;
-		this.numeroSecreto =crearNumeroSecreto();
+		this.numeroSecreto = crearNumeroSecreto();
 		this.salario = 0.0f;
 	}
-	
+
 	/**
-	 * Cuenta
-	 * {@summary Constructor que nos ayuda a crear una cuenta }
+	 * Cuenta {@summary Constructor que nos ayuda a crear una cuenta }
 	 */
-	public Cuenta() {}
-	
+	public Cuenta() {
+	}
+
 	/**
-	 * ingresar
-	 * {@summary suma lo que tiene la cuenta mas lo que ingresamos. }
+	 * ingresar {@summary suma lo que tiene la cuenta mas lo que ingresamos. }
+	 * 
 	 * @param dinero
 	 * @return float
 	 */
 	public float ingresar(float dinero) {
 		return this.salario += dinero;
 	}
-	
+
 	/**
-	 * retirar
-	 * {@summary resta lo que tiene la cuenta mas lo que ingresamos. }
+	 * retirar {@summary resta lo que tiene la cuenta mas lo que ingresamos. }
+	 * 
 	 * @param dinero
 	 * @return float
 	 */
 	public float retirar(float dinero) {
 		return this.salario -= dinero;
 	}
+
 	/**
-	 * crearNumeroSecreto
-	 * {@summary Creará un número secreto con el que podremos acceder a la cuenta }
+	 * crearNumeroSecreto {@summary Creará un número secreto con el que podremos
+	 * acceder a la cuenta }
+	 * 
 	 * @return int
 	 */
 	private int crearNumeroSecreto() {
@@ -115,6 +119,5 @@ public class Cuenta {
 		return "Cuenta [nombreTitular=" + nombreTitular + ", numeroSecreto=" + numeroSecreto + ", salario=" + salario
 				+ "]";
 	}
-	
-	
+
 }
