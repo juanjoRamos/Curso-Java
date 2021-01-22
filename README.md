@@ -5,6 +5,5 @@ En este paquete estaré subiendo ejercicios que nos deja el tutor de Udemy en su
 ### Ejercicio 1
 Crear un cajero automático que sea capaz de aumentar y retirar el saldo de una cuenta.
 - Cuenta.java
-- Persona.java
 - Cajero.java (Principal - main)
 
