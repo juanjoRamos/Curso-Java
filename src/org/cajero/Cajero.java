@@ -32,6 +32,7 @@ public class Cajero {
 
 		ArrayList<Cuenta> listaCuenta = new ArrayList<Cuenta>();
 		listaCuenta.add(new Cuenta("juanjoRamos", 0f));
+		
 		System.out.println(listaCuenta.toString());
 		System.out.print("Introduzca su nombre: ");
 		nombre = sc.nextLine();
